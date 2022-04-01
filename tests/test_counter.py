@@ -15,7 +15,7 @@ def test_counter_counts_up_twice_on_double_click(page):
 
 def test_counter_counts_down_once_on_click(page):
 	page.goto('https://counter.onlineclock.net/')
-	page.locator('text="Count Up"').click()
+	page.locator('text="Count Down"').click()
 	assert page.locator('#counter').text_content() == "0"
 
 def test_counter_counts_down_twice_on_double_click(page):
